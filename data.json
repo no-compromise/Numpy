@@ -1,0 +1,22 @@
+{
+  "Names": ["Adam", "Ben", "Carl", "Ding", "Emet", "Franz", "George", "Homer"],
+  "Surnames": ["Lincoln", "Mercury", "Van Bahnhof", "Hong", "Simpson", "Dover"],
+  "Street": [
+    "Emmet",
+    "Main",
+    "Pretty",
+    "Jump",
+    "High",
+    "Metal",
+    "Ocean",
+    "Vicotry"
+  ],
+  "City": [
+    "Abraka city",
+    "Bratislava",
+    "Clevetown",
+    "Duffberry",
+    "Springfield",
+    "Mumuland"
+  ]
+}
