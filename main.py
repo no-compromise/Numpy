@@ -48,8 +48,6 @@ for _ in range(args.rows):
         + np.random.choice(data["City"])
     )
 
-print(r_name)
-print(r_address)
 
 if args.debug:
     print("*** DEBUG INFO: ***\n")
@@ -57,4 +55,6 @@ if args.debug:
     print(args.rows)
     print(args.debug)
     print(type(data))
+    print(r_name)
+    print(r_address)
     print("*** END DEBUG INFO ***")
