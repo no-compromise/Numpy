@@ -3,6 +3,7 @@
 import numpy as np
 import argparse
 import json
+import sys
 
 # ---- Argument parsing section ----
 
@@ -23,8 +24,14 @@ args = parser.parse_args()
 # -----------------------------------
 
 # import data.json
-with open("./data.json", "r") as f:
-    data = json.load(f)
+try:
+    f = open("./data.json", "r")
+except FileNotFoundError:
+    print("Data file not found!")
+    sys.exit(1)
+else:
+    with f:
+        data = json.load(f)
 
 
 if args.debug:
