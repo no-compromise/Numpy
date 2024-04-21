@@ -32,7 +32,24 @@ except FileNotFoundError:
 else:
     with f:
         data = json.load(f)
+# VARS initialize
+r_name, r_address = [[] for _ in range(2)]
 
+# Main loop
+for _ in range(args.rows):
+    r_name.append(
+        np.random.choice(data["Names"]) + " " + np.random.choice(data["Surnames"])
+    )
+    r_address.append(
+        np.random.choice(data["Street"])
+        + " str. "
+        + str(np.random.randint(1, 200))
+        + ", "
+        + np.random.choice(data["City"])
+    )
+
+print(r_name)
+print(r_address)
 
 if args.debug:
     print("*** DEBUG INFO: ***\n")
