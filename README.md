@@ -19,5 +19,5 @@ poetry install
 3. Run script
 
 ```
-poetry run python main.py
+poetry run python ./mynumpy/main.py
 ```
